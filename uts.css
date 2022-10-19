@@ -1,0 +1,415 @@
+/*CSS Untuk Halaman Home dan Keseluruhan*/
+
+*{
+  line-height: 20px;
+  font-size: 15px;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.atas {
+  width: 1000px;
+  margin: auto;
+}
+
+.latar {
+  width: 100%;
+}
+
+nav {
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid white;
+  line-height: 60px;
+  width: 100%;
+}
+  
+nav .judul{
+  float: left;
+  text-align: center;
+  padding : 8px 0;
+}
+
+nav .judul h1 {
+  font-family : georgia;
+  font-size: 18px;
+}
+
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 500px;
+}
+
+nav .menu:after{
+  content : '';
+	display : block;
+	clear : both;
+}
+  
+nav .menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+  
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+  
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding : 22px 20px;
+  text-decoration: none;
+  font-family : georgia;
+}
+  
+nav ul li a:hover {
+  color : white;
+  text-decoration: none;
+  background-color:  rgb(167, 162, 162);
+}
+
+.active {
+	background-color : rgb(167, 162, 162); 
+}
+  
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+header video {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+header .latar_vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+
+header .informasi {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  margin : 10px;
+}
+
+header .informasi p{
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header .informasi h3 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-family :rockwell;
+}
+
+.tombol {
+  background-color: #6bc88f;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+section {
+	padding-top : 5px;
+}
+
+/*CSS Untuk Biodata*/
+
+header .biografi {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
+header .biografi p{
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header .biografi h3 {
+  font-size: 50px;
+  margin: 0;
+  padding : 0;
+  font-family :rockwell;
+}
+
+.deskripsi {
+	height: 60vh;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.deskripsi:after {
+	content:'';
+	display: block;
+	position: absolute;
+}
+
+.deskripsi p {
+  text-align: justify;
+	color: #fff;
+	z-index: 1;
+	padding: 30px 15px;
+	border:3px solid #fff;
+}
+
+.deskripsi .tombol {
+  background-color: #6bbac8;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px ;
+  margin-left : 600px;
+  font-size: 15px;
+  border-radius: 4px;
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*CSS Untuk Dashboard*/
+
+header .dash {
+    z-index: 100;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    left : 25%;
+}
+
+.home-section {
+    padding-top: 60px;
+}
+
+.table {
+	margin-bottom: 0px;
+}
+
+.table a {
+	color: #ffffff;
+}
+
+.table > tbody > tr > td {
+	padding: 15px;
+	border: 3px solid white;
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+tr > td:nth-child(1){
+	background-color:gainsboro;
+	font-weight: 500;
+	font-size: 15px;
+	color: rgb(85, 76, 76);
+	width: 140px;
+}
+
+tr > td:nth-child(2) {
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.bg img {
+	width  : 500px;
+	margin-left : 300px;
+	margin-top :-395px;
+}
+
+/*CSS Untuk Login*/
+
+.login {
+  width : 300px;
+  padding : 30px;
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+  background: gainsboro;
+  text-align: center;
+  border-radius : 10px;
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login h1{
+  color:  rgb(85, 76, 76);
+  text-transform: uppercase;
+  font-weight: 100px;
+}
+
+#username,#password{
+  border: 0;
+  background: none;
+  display: block;
+  margin : 20px auto;
+  text-align: center;
+  border : 3px solid  rgb(85, 76, 76);
+  padding : 14px 10px;
+  width : 220px;
+  outline: none;
+  color :  rgb(85, 76, 76);
+  border-radius : 25px;
+  transition: 0.25px;
+  font-family :rockwell;
+}
+
+#username:focus,#password:focus{
+  width : 220px;
+  border-color: #6bbac8;
+}
+
+.login input[type="submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin : 10px auto;
+  text-align: center;
+  border : 3px solid  rgb(85, 76, 76);
+  padding : 10px;
+  width : 100px;
+  outline: none;
+  color : rgb(78, 69, 69);
+  border-radius : 25px;
+  transition: 0.25px;
+  cursor : pointer;
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.login input[type="submit"]:hover{
+  width : 100px;
+  background-color: #6bbac8;
+}
+
+/*CSS Untuk Kontak*/
+
+.kontak {
+  width : 35%;
+  padding : 2rem;
+  background: gainsboro;
+  font-family : georgia;
+  position : absolute;
+  top : 55%;
+  left : 50%;
+  transform : translate(-50%, -50%);  
+  border-radius : 10px;
+}
+
+.kontak h1{
+  color:  rgb(85, 76, 76);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1 rem;
+  text-align: center;
+}
+
+form, input, textarea{
+  font-family:rockwell;
+  font-size: initial;
+}
+
+.form1 label {
+  display: block;
+  margin: 0.1rem 0 0.1rem 0;
+  color : rgb(78, 69, 69);
+}
+
+.form1 input[type="text"],.form1 textarea{
+  border : 1px solid  rgb(85, 76, 76);
+  padding : 0.1rem;
+  width : 100%;
+  outline: none;
+  border: 1 px solid gainsboro;
+  transition: border 0.15s;
+  font-family :rockwell;
+  border-radius : 10px;
+}
+
+.form1 input[type="text"]:focus{
+  height: 2rem;
+  border-color: #6bbac8;
+  border-radius : 10px;
+}
+
+.form1 textarea:focus{
+  resize : vertical;
+  border-color: #6bbac8;
+  border-radius : 10px;
+}
+
+.form1 input[type="text"]{
+  height: 1.5rem;
+}
+
+.form1 textarea{
+  resize : vertical;
+}
+
+.kontak input[type="submit"]{
+  background: none;
+  display: block;
+  margin : 20px auto;
+  text-align: center;
+  border : 3px solid  rgb(85, 76, 76);
+  padding : 10px;
+  width : 100px;
+  outline: none;
+  color : rgb(78, 69, 69);
+  border-radius : 25px;
+  transition: 0.25px;
+  cursor : pointer;
+  color:  rgb(85, 76, 76);
+  font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.kontak input[type="submit"]:hover{
+  width : 100px;
+  background-color: #6bbac8;
+}
+
+

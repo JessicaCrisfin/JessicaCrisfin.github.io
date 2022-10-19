@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS PEMROGRAMAN WEB</title>
+    <link rel="stylesheet" href="uts.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="atas">
+        <div class="judul">
+            <h1>Wisata Desa Mbokita.</h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="uts.html">HOME</a></li>
+            <li><a href="biodata.html">BIODATA</a></li>
+            <li><a href="kontak.html">CONTACT</a></li>
+            <li class ="active"><a href="login.html">LOGIN</a></li>
+            <li><a href="dashboard.html">DASHBOARD</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div>
+        <header>
+          <div></div>
+          <img src = "bg-pulau.jpg">
+          <form class = "login" method = "post" onsubmit = "return pengecekan()" action="dashboard.html">
+            <h1>Login</h1>
+            <input type = "text" placeholder = "Masukkan Username" id = "username">
+            <input type = "password" placeholder = "Masukkan Password" id = "password">
+            <input type = "submit" value="Login">
+            <div id ="tampilan" > </div>
+          </form>
+        </header>
+    </div>
+
+    <script language="JavaScript">
+        function pengecekan(){
+            var username1 = document.getElementById("username").value;
+            var password1 = document.getElementById("password").value;
+            if(username1 == "jess" && password1 == "jess19"){
+              return true;
+            } else{
+              var tampilan1 = document.getElementById("tampilan").innerHTML = 
+              "Username atau Password yang Anda masukkan salah";
+              return false;
+            }
+        }
+    </script>
+  </body>
+</html>
